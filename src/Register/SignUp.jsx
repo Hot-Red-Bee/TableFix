@@ -79,7 +79,7 @@ const SignUp = () => {
                   type='password'
                   id='confirmPassword'
                   value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  onChange={(e) => setConfirmPassword(e.target.value.focus())}
                   className='w-full mt-2 p-2 border rounded'
                   placeholder='Confirm your password'
                   required

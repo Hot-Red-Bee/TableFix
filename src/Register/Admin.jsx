@@ -51,7 +51,7 @@ const Admin = () => {
             </div>
             {!isLogin && (
               <div className='mb-4'>
-                <label htmlFor='confirmPassword' className='block text-gray-700 font-medium'>Confirm Password</label>
+                <label htmlFor='confirmPassword' className='block text-gray-700 font-medium focus'>Confirm Password</label>
                 <input
                   type='password'
                   id='confirmPassword'

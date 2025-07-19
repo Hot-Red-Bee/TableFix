@@ -7,6 +7,11 @@ import Footer from './layout/Footer';
 import Login from './Register/Login';
 import SignUp from './Register/SignUp';
 import Admin from './Register/Admin';
+import RestaurantListPage from '../pages/RestaurantListPage';
+import MyReservationsPage from '../pages/MyReservationsPage';
+import ReservationFormPage from '../pages/ReservationFormPage';
+import ReservationSuccessPage from '../pages/ReservationSuccessPage';
+
 
 const App = () => {
   return (
@@ -20,6 +25,10 @@ const App = () => {
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<SignUp />} />
             <Route path='/admin' element={<Admin />} />
+            <Route path='/restaurants' element={<RestaurantListPage />} />
+            <Route path='/my-reservations' element={<MyReservationsPage />} />
+            <Route path='/reserve' element={<ReservationFormPage />} />
+            <Route path="/reservation-success" element={<ReservationSuccessPage />} />
           </Routes>
         </main>
         <Footer />
